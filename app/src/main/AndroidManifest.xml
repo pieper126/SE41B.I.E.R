@@ -58,6 +58,10 @@
             android:name=".ResultsActivity"
             android:label="@string/title_activity_results" >
         </activity>
+        <activity
+            android:name=".GroupInfoActivity"
+            android:label="@string/title_activity_group_info" >
+        </activity>
     </application>
 
 </manifest>

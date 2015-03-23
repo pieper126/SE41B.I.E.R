@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:id="@+id/btnVriendenGroepen"
+            android:layout_weight="10" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:id="@+id/btnSocialMediaGroepen"
+            android:layout_weight="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        android:weightSum="1"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSocial"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:src="@drawable/socialicon"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.33"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSearch"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:focusableInTouchMode="false" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSettings"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wrench"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+</LinearLayout>

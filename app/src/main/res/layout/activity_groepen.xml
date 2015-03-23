@@ -9,31 +9,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.17"
-        android:id="@+id/vrienden"
+        android:id="@+id/GroepenLL2"
         android:weightSum="1">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="57dp"
-            android:orientation="horizontal"
-            android:id="@+id/LLVrienden1"
+            android:id="@+id/GroepenLL3"
             android:weightSum="1">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Vrienden"
+                android:text="Groepen"
                 android:id="@+id/textView"
                 android:textStyle="bold"
-                android:textSize="30dp" />
+                android:textSize="30sp"
+                android:layout_weight="0.50" />
 
-            <EditText
-                android:layout_width="wrap_content"
+            <ImageButton
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
-                android:layout_weight="0.91"
-                android:text="search" />
+                android:id="@+id/imageButton"
+                android:contentDescription=""
+                android:adjustViewBounds="true"
+                android:src="@drawable/plus"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.50" />
 
         </LinearLayout>
 

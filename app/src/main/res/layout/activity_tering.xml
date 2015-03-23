@@ -31,12 +31,7 @@
             android:clickable="false"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33"
-            android:layout_margin="0dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginBottom="0dp" />
+            android:layout_weight="0.33" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -46,7 +41,8 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/search"
             android:scaleType="fitCenter"
-            android:focusableInTouchMode="false" />
+            android:focusableInTouchMode="false"
+            android:onClick="onSearchClick" />
 
         <ImageButton
             android:layout_width="0dp"

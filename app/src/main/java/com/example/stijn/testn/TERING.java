@@ -1,7 +1,9 @@
 package com.example.stijn.testn;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -16,13 +18,11 @@ public class TERING extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tering);
-        setUpMapIfNeeded();
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        setUpMapIfNeeded();
+    public void onSearchClick(View v) {
+        Intent i = new Intent(this, SearchActivity.class);
+        startActivity(i);
     }
 
     /**

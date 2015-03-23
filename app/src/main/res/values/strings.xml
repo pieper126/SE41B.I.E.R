@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">testn</string>
     <string name="title_activity_tering">Map</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>

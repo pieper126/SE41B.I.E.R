@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">testn</string>
     <string name="title_activity_tering">Map</string>
+    <string name="contactscherm">Problemen of andere vragen? Mail ons: iets@gmail.com</string>
     <string name="title_activity_vrienden">Vrienden</string>
 
     <string name="hello_world">Hello world!</string>

@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:layout_weight="1.18"
+        android:id="@+id/RelativeLayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#ffe4e5e5"
+            android:id="@+id/relativeLayout4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Groepsnaam"
+                android:id="@+id/textView14"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="33dp" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/btnSettings"
+                android:layout_weight="0.33"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/cog"
+                android:scaleType="fitCenter"
+                android:focusableInTouchMode="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="0dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#ffe4e5e5"
+            android:id="@+id/relativeLayout5"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="#ffe4e5e5"
+                android:id="@+id/relativeLayout6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Naam lid 1"
+                    android:id="@+id/textView16"
+                    android:textSize="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="31dp" />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageButton2"
+                    android:layout_weight="0.33"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/remove"
+                    android:scaleType="fitCenter"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="#ffe4e5e5"
+                android:id="@+id/relativeLayout7"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Naam lid 2"
+                    android:id="@+id/textView17"
+                    android:textSize="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="31dp" />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageButton3"
+                    android:layout_weight="0.33"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/remove"
+                    android:scaleType="fitCenter"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="#ffe4e5e5"
+                android:id="@+id/relativeLayout8"
+                android:layout_below="@+id/relativeLayout7"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Naam lid 3"
+                    android:id="@+id/textView18"
+                    android:textSize="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="31dp" />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageButton4"
+                    android:layout_weight="0.33"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/remove"
+                    android:scaleType="fitCenter"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:id="@+id/imageButton5"
+                android:layout_weight="0.33"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/add"
+                android:scaleType="fitCenter"
+                android:focusableInTouchMode="false"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Leden"
+            android:id="@+id/textView15"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_alignStart="@+id/relativeLayout5"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        android:weightSum="1"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.33" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSearch"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:focusableInTouchMode="false"
+            android:onClick="onBackClicked" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSettings"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wrench"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>

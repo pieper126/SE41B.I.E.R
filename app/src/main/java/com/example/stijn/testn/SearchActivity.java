@@ -1,9 +1,11 @@
 package com.example.stijn.testn;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class SearchActivity extends ActionBarActivity {
@@ -35,5 +37,15 @@ public class SearchActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onSearchClicked(View v) {
+        Intent i = new Intent(this, ResultsActivity.class);
+        startActivity(i);
+    }
+
+    public void onBackClicked(View view) {
+        Intent i = new Intent(this, TERING.class);
+        startActivity(i);
     }
 }

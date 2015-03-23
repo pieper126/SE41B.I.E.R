@@ -31,6 +31,7 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
+            android:onClick="goToSocial"
             android:focusableInTouchMode="false" />
 
         <ImageButton

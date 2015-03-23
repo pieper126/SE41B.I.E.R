@@ -1,9 +1,11 @@
 package com.example.stijn.testn;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class Vrienden extends ActionBarActivity {
@@ -35,5 +37,20 @@ public class Vrienden extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goToSearchVrienden(View v) {
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToHomeVrienden(View view){
+        Intent intent = new Intent(this, Social.class);
+        startActivity(intent);
+    }
+
+    public void goToContactVrienden(View view){
+        Intent intent = new Intent(this, contactscherm.class);
+        startActivity(intent);
     }
 }

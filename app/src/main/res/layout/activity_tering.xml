@@ -31,7 +31,6 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33"
             android:onClick="goToSocial"
             android:focusableInTouchMode="false" />
 

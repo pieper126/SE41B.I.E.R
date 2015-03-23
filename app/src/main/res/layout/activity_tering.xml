@@ -27,11 +27,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/btnSocial"
+            android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
-            android:clickable="false"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:onClick="goToSocial"
+            android:focusableInTouchMode="false" />
 
         <ImageButton
             android:layout_width="0dp"

@@ -25,6 +25,11 @@ public class TERING extends FragmentActivity {
         startActivity(i);
     }
 
+    public void goToSocial(View view){
+        Intent intent = new Intent(TERING.this, Social.class);
+        startActivity(intent);
+    }
+
     /**
      * Sets up the map if it is possible to do so (i.e., the Google Play services APK is correctly
      * installed) and the map has not already been instantiated.. This will ensure that we only ever

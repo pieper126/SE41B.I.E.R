@@ -201,7 +201,8 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/back"
             android:scaleType="fitCenter"
-            android:focusableInTouchMode="false" />
+            android:focusableInTouchMode="false"
+            android:onClick="onBackClicked" />
 
         <ImageButton
             android:layout_width="0dp"

@@ -132,6 +132,38 @@ android:weightSum="1">
             android:layout_marginLeft="10dp"
             android:layout_below="@+id/spnTimes"
             android:layout_toEndOf="@+id/textView5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoeken op groepsvoorkeuren"
+            android:id="@+id/button4"
+            android:background="#ffd5d6d6"
+            android:typeface="normal"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:clickable="true"
+            android:layout_below="@+id/spinner"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/txfSearch" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meer filters"
+            android:id="@+id/button5"
+            android:background="#ffd5d6d6"
+            android:typeface="normal"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:clickable="true"
+            android:layout_below="@+id/button4"
+            android:layout_alignStart="@+id/button4"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_marginTop="10dp" />
     </RelativeLayout>
 
     <LinearLayout

@@ -36,7 +36,8 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="380dp"
-            android:id="@+id/linId">
+            android:id="@+id/random"
+            android:layout_weight="1.08">
 
 
             <ListView
@@ -48,8 +49,8 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
             android:baselineAligned="false"
             android:weightSum="1"
             android:layout_margin="0dp"
@@ -60,7 +61,7 @@
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:id="@+id/btnSocial"
                 android:layout_gravity="center_vertical"
                 android:clickable="false"
@@ -75,17 +76,16 @@
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:id="@+id/btnSearch"
                 android:layout_weight="0.33"
-                android:layout_gravity="center_vertical"
                 android:src="@drawable/search"
                 android:scaleType="fitCenter"
                 android:focusableInTouchMode="false" />
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:id="@+id/btnSettings"
                 android:layout_weight="0.33"
                 android:layout_gravity="center_vertical"

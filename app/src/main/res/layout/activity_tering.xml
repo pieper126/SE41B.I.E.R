@@ -12,7 +12,7 @@
         <RelativeLayout
             android:layout_width="70dp"
             android:layout_height="65dp"
-            android:background="@drawable/beerMarker"
+            android:background="@drawable/beermarker"
             android:layout_marginEnd="28dp"
             android:layout_marginBottom="186dp"
             android:layout_alignParentBottom="true"
@@ -24,7 +24,7 @@
         <RelativeLayout
             android:layout_width="70dp"
             android:layout_height="65dp"
-            android:background="@drawable/beerMarker"
+            android:background="@drawable/beermarker"
             android:layout_marginBottom="25dp"
             android:layout_above="@+id/relativeLayout9"
             android:layout_alignParentStart="true"
@@ -35,7 +35,7 @@
         <RelativeLayout
             android:layout_width="70dp"
             android:layout_height="65dp"
-            android:background="@drawable/beerMarker"
+            android:background="@drawable/beermarker"
             android:layout_alignTop="@+id/relativeLayout9"
             android:layout_alignStart="@+id/relativeLayout10"
             android:layout_marginTop="90dp"

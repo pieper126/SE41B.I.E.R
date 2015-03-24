@@ -63,4 +63,9 @@ public class SearchActivity extends ActionBarActivity {
         Intent i = new Intent(this, Groepen.class);
         startActivity(i);
     }
+
+    public void onSearchExtrasClickedFromSearch(View v) {
+        Intent i = new Intent(this, SearchExtras.class);
+        startActivity(i);
+    }
 }

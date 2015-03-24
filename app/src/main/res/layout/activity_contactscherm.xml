@@ -1,25 +1,16 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.stijn.testn.contactscherm"
-    android:clickable="true"
-    android:nestedScrollingEnabled="false">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:text="@string/contactscherm"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:editable="false"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.00"
+        android:text="Bij problemen of andere vragen, mail ons via iets@gmail.com"
+        android:textSize="25dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -27,10 +18,12 @@
         android:layout_height="70dp"
         android:baselineAligned="false"
         android:weightSum="1"
+        android:layout_margin="0dp"
         android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
         android:layout_marginRight="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true">
+        android:layout_marginBottom="0dp"
+        android:gravity="bottom">
 
         <ImageButton
             android:layout_width="0dp"
@@ -40,32 +33,28 @@
             android:clickable="false"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33"
-            android:layout_margin="0dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginBottom="0dp" />
+            android:layout_weight="0.33" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/btnSearch"
+            android:id="@+id/btnBack"
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/search"
+            android:src="@drawable/back"
             android:scaleType="fitCenter"
-            android:focusableInTouchMode="false" />
+            android:focusableInTouchMode="false"
+            android:onClick="onBackClicked" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/btnSettings"
-            android:onClick="goToContact"
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
-            android:scaleType="fitCenter"
-            android:clickable="true" />
+            android:scaleType="fitCenter" />
     </LinearLayout>
-</RelativeLayout>
+
+
+</LinearLayout>

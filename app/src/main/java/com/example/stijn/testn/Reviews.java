@@ -39,9 +39,27 @@ public class Reviews extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void OnClickSocialReviews(View v)
+    {
+        Intent intent = new Intent(Reviews.this, Social.class);
+        startActivity(intent);
+    }
+
+    public void OnClickBackReviews(View v)
+    {
+        Intent intent = new Intent(Reviews.this, KroegInfo.class);
+        startActivity(intent);
+    }
+
+    public void OnClickContactReviews(View v)
+    {
+        Intent intent = new Intent(Reviews.this, contactscherm.class);
+        startActivity(intent);
+    }
+
     public void OnAddReview(View v)
     {
-        Intent intent = new Intent(Reviews.this, Groepen.class);
+        Intent intent = new Intent(Reviews.this, AddReview.class);
         startActivity(intent);
     }
 }

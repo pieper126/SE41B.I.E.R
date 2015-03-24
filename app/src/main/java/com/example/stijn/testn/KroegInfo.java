@@ -48,7 +48,7 @@ public class KroegInfo extends ActionBarActivity {
 
     public void OnClickMenuKroegInfo(View v)
     {
-        Intent intent = new Intent(this, Groepen.class);
+        Intent intent = new Intent(this, MenuKaart.class);
         startActivity(intent);
     }
 
@@ -64,12 +64,12 @@ public class KroegInfo extends ActionBarActivity {
     }
 
     public void OnClickContactKroegInfo(View view){
-        Intent intent = new Intent(this, ResultsActivity.class);
+        Intent intent = new Intent(this, contactscherm.class);
         startActivity(intent);
     }
 
     public void OnClickBackKroegInfo(View view){
-        Intent intent = new Intent(this, contactscherm.class);
+        Intent intent = new Intent(this, ResultsActivity.class);
         startActivity(intent);
     }
 }

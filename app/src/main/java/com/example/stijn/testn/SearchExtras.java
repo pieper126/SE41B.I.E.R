@@ -1,26 +1,24 @@
 package com.example.stijn.testn;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class ResultsActivity extends ActionBarActivity {
+public class SearchExtras extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_results);
+        setContentView(R.layout.activity_search_extras);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_results, menu);
+        getMenuInflater().inflate(R.menu.menu_search_extras, menu);
         return true;
     }
 
@@ -37,25 +35,5 @@ public class ResultsActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void onBackClicked(View view) {
-        Intent i = new Intent(this, SearchActivity.class);
-        startActivity(i);
-    }
-
-    public void onBarClicked(View v) {
-        Intent i = new Intent(this, KroegInfo.class);
-        startActivity(i);
-    }
-
-    public void onSocialClicked(View v) {
-        Intent i = new Intent(this, Social.class);
-        startActivity(i);
-    }
-
-    public void onContactsClicked(View v) {
-        Intent i = new Intent(this, contactscherm.class);
-        startActivity(i);
     }
 }

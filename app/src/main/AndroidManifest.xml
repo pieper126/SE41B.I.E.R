@@ -84,6 +84,10 @@
             android:name=".add_group"
             android:label="@string/title_activity_add_group" >
         </activity>
+        <activity
+            android:name=".SearchExtras"
+            android:label="@string/title_activity_search_extras" >
+        </activity>
     </application>
 
 </manifest>

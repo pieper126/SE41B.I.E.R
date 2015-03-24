@@ -19,5 +19,6 @@
     <string name="title_activity_group_info">GroupInfoActivity</string>
     <string name="title_activity_voorkeuren">Voorkeuren</string>
     <string name="title_activity_add_group">add_group</string>
+    <string name="title_activity_search_extras">SearchExtras</string>
 
 </resources>

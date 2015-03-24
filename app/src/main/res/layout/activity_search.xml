@@ -41,7 +41,7 @@ android:weightSum="1">
             android:layout_alignTop="@+id/txfSearch"
             android:layout_toEndOf="@+id/txfSearch"
             android:layout_marginTop="-7dp"
-            android:onClick="onSearchClick" />
+            android:onClick="onSearchClickedFromSearch" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -187,7 +187,9 @@ android:weightSum="1">
             android:clickable="false"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:nestedScrollingEnabled="false"
+            android:onClick="onSocialClickedFromSearch" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -198,7 +200,7 @@ android:weightSum="1">
             android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
-            android:onClick="onBackClicked" />
+            android:onClick="onBackClickedFromSearch" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -207,7 +209,8 @@ android:weightSum="1">
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:onClick="onContactsClickedFromSearch" />
     </LinearLayout>
 
 </LinearLayout>

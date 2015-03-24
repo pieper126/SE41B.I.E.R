@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">testn</string>
     <string name="title_activity_tering">Map</string>
     <string name="title_activity_search">SearchActivity</string>
@@ -10,4 +12,9 @@
     <string name="title_activity_social">Social</string>
     <string name="title_activity_social_media">SocialMedia</string>
     <string name="title_activity_results">ResultsActivity</string>
+    <string name="title_activity_kroeg_info">KroegInfo</string>
+    <string name="title_activity_menu_kaart">MenuKaart</string>
+    <string name="title_activity_reviews">Reviews</string>
+    <string name="title_activity_add_review">AddReview</string>
+
 </resources>

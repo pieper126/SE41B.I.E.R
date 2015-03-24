@@ -58,6 +58,22 @@
             android:name=".ResultsActivity"
             android:label="@string/title_activity_results" >
         </activity>
+        <activity
+            android:name=".KroegInfo"
+            android:label="@string/title_activity_kroeg_info" >
+        </activity>
+        <activity
+            android:name=".MenuKaart"
+            android:label="@string/title_activity_menu_kaart" >
+        </activity>
+        <activity
+            android:name=".Reviews"
+            android:label="@string/title_activity_reviews" >
+        </activity>
+        <activity
+            android:name=".AddReview"
+            android:label="@string/title_activity_add_review" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.example.stijn.testn;
 
 import android.content.Intent;
+import android.database.CursorJoiner;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -39,21 +40,36 @@ public class KroegInfo extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void OnPushGroup(View v)
+    public void OnPushGroupKroegInfo(View v)
     {
         Intent intent = new Intent(KroegInfo.this, Groepen.class);
         startActivity(intent);
     }
 
-    public void OnClickMenu(View v)
+    public void OnClickMenuKroegInfo(View v)
     {
-        Intent intent = new Intent(KroegInfo.this, Groepen.class);
+        Intent intent = new Intent(this, Groepen.class);
         startActivity(intent);
     }
 
-    public void OnClickReviews(View v)
+    public void OnClickReviewsKroegInfo(View v)
     {
-        Intent intent = new Intent(KroegInfo.this, Reviews.class);
+        Intent intent = new Intent(this, Reviews.class);
+        startActivity(intent);
+    }
+
+    public void OnClickSocialKroegInfo(View view){
+        Intent intent = new Intent(this, Social.class);
+        startActivity(intent);
+    }
+
+    public void OnClickContactKroegInfo(View view){
+        Intent intent = new Intent(this, ResultsActivity.class);
+        startActivity(intent);
+    }
+
+    public void OnClickBackKroegInfo(View view){
+        Intent intent = new Intent(this, contactscherm.class);
         startActivity(intent);
     }
 }

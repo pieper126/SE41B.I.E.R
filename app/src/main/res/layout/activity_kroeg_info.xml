@@ -424,7 +424,7 @@
                 android:layout_toEndOf="@+id/btnMenu"
                 android:layout_marginLeft="9dp"
                 android:layout_alignParentBottom="true"
-                android:onClick="OnPushGroup" />
+                android:onClick="OnPushGroupKroegInfo" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -435,7 +435,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:onClick="OnPushMenu" />
+                android:onClick="OnClickMenuKroegInfo" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -446,7 +446,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="14dp"
                 android:layout_alignParentBottom="true"
-                android:onClick="OnPushReviews" />
+                android:onClick="OnClickReviewsKroegInfo" />
         </RelativeLayout>
 
     <LinearLayout
@@ -469,6 +469,7 @@
             android:layout_gravity="center_vertical"
             android:clickable="false"
             android:src="@drawable/socialicon"
+            android:onClick="OnClickSocialKroegInfo"
             android:scaleType="fitCenter"
             android:layout_weight="0.33" />
 
@@ -481,7 +482,7 @@
             android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
-            android:onClick="onBackClicked" />
+            android:onClick="OnClickBackKroegInfo" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -490,6 +491,7 @@
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
+            android:onClick="OnClickContactKroegInfo"
             android:scaleType="fitCenter" />
     </LinearLayout>
 

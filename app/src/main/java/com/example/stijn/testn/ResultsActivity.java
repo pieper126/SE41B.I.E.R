@@ -49,7 +49,7 @@ public class ResultsActivity extends ActionBarActivity {
         startActivity(i);
     }
 
-    public void onSocialClicked(View v) {
+    public void onSocialClickedResults(View v) {
         Intent i = new Intent(this, Social.class);
         startActivity(i);
     }

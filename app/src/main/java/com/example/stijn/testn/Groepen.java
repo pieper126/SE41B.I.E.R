@@ -43,27 +43,23 @@ public class Groepen extends ActionBarActivity {
     {
         Intent intent = new Intent(this, TERING.class);
         startActivity(intent);
-        finish();
     }
 
     public void goToSocialGroepen(View view)
     {
         Intent intent = new Intent(this, TERING.class);
         startActivity(intent);
-        finish();
     }
 
     public void goToGroup1(View view)
     {
         Intent intent = new Intent(this, GroupInfoActivity.class);
         startActivity(intent);
-        finish();
     }
 
     public void goToAddGroup(View view)
     {
         Intent intent = new Intent(this, AddGroup.class);
         startActivity(intent);
-        finish();
     }
 }

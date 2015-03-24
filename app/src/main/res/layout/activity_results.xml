@@ -196,7 +196,7 @@
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
             android:layout_weight="0.33"
-            android:onClick="onContactsClickedFromMain" />
+            android:onClick="onSocialClickedResults" />
 
         <ImageButton
             android:layout_width="0dp"

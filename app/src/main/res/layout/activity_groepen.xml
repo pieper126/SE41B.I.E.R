@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
@@ -28,6 +29,7 @@
                 android:adjustViewBounds="true"
                 android:src="@drawable/plus"
                 android:scaleType="fitCenter"
+                android:onClick="goToAddGroup"
                 android:layout_weight="0.50" />
 
         </LinearLayout>
@@ -40,11 +42,12 @@
             android:layout_weight="1.08">
 
 
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="334dp"
-                android:id="@+id/listView" />
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groep1"
+                android:onClick="goToGroup1"
+                android:id="@+id/button6" />
         </LinearLayout>
 
         <LinearLayout
@@ -66,6 +69,7 @@
                 android:layout_gravity="center_vertical"
                 android:clickable="false"
                 android:src="@drawable/socialicon"
+                android:onClick="goToSocialGroepen"
                 android:scaleType="fitCenter"
                 android:layout_weight="0.33"
                 android:layout_margin="0dp"
@@ -81,6 +85,7 @@
                 android:layout_weight="0.33"
                 android:src="@drawable/search"
                 android:scaleType="fitCenter"
+                android:onClick="goToSearchGroepen"
                 android:focusableInTouchMode="false" />
 
             <ImageButton
@@ -90,6 +95,7 @@
                 android:layout_weight="0.33"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/wrench"
+                android:onClick="goToContact"
                 android:scaleType="fitCenter" />
 
         </LinearLayout>

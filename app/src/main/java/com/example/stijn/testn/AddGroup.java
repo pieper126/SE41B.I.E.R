@@ -1,26 +1,24 @@
 package com.example.stijn.testn;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class Groepen extends ActionBarActivity {
+public class AddGroup extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_groepen);
+        setContentView(R.layout.activity_add_group);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_groepen, menu);
+        getMenuInflater().inflate(R.menu.menu_add_group, menu);
         return true;
     }
 
@@ -37,33 +35,5 @@ public class Groepen extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void goToSearchGroepen(View view)
-    {
-        Intent intent = new Intent(this, TERING.class);
-        startActivity(intent);
-        finish();
-    }
-
-    public void goToSocialGroepen(View view)
-    {
-        Intent intent = new Intent(this, TERING.class);
-        startActivity(intent);
-        finish();
-    }
-
-    public void goToGroup1(View view)
-    {
-        Intent intent = new Intent(this, GroupInfoActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
-    public void goToAddGroup(View view)
-    {
-        Intent intent = new Intent(this, AddGroup.class);
-        startActivity(intent);
-        finish();
     }
 }

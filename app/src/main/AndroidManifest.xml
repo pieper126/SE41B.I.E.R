@@ -81,7 +81,7 @@
             android:label="@string/title_activity_voorkeuren" >
         </activity>
         <activity
-            android:name=".add_group"
+            android:name=".AddGroup"
             android:label="@string/title_activity_add_group" >
         </activity>
         <activity

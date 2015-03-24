@@ -43,4 +43,9 @@ public class ResultsActivity extends ActionBarActivity {
         Intent i = new Intent(this, SearchActivity.class);
         startActivity(i);
     }
+
+    public void onBarClicked(View v) {
+        Intent i = new Intent(this, KroegInfo.class);
+        startActivity(i);
+    }
 }

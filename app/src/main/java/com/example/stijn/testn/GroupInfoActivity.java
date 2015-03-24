@@ -42,4 +42,19 @@ public class GroupInfoActivity extends ActionBarActivity {
         Intent i = new Intent(this, Groepen.class);
         startActivity(i);
     }
+
+    public void onSearchClicked(View v) {
+        Intent i = new Intent(this, SearchActivity.class);
+        startActivity(i);
+    }
+
+    public void onPreferencesClicked(View v) {
+        Intent i = new Intent(this, Voorkeuren.class);
+        startActivity(i);
+    }
+
+    public void onContactsClicked(View v) {
+        Intent i = new Intent(this, contactscherm.class);
+        startActivity(i);
+    }
 }

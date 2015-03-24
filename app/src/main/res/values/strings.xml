@@ -17,5 +17,6 @@
     <string name="title_activity_reviews">Reviews</string>
     <string name="title_activity_add_review">AddReview</string>
     <string name="title_activity_group_info">GroupInfoActivity</string>
+    <string name="title_activity_voorkeuren">Voorkeuren</string>
 
 </resources>

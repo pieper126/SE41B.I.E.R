@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voorkeuren &lt;GroepsNaam>: "
+            android:id="@+id/textGroupName"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/textGroupName"
+            android:layout_marginTop="20dp"
+            android:layout_above="@+id/btnSavePrefs"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Locatie: "
+                    android:id="@+id/textLocation"
+                    android:layout_column="0"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLocation"
+                    android:layout_column="1"
+                    android:text="locatie"
+                    android:editable="true"
+                    android:textSize="17dp"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afstand:"
+                    android:id="@+id/textDistance"
+                    android:layout_column="2"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/txtDistance"
+                    android:layout_column="3"
+                    android:textSize="15dp"
+                    android:enabled="true"
+                    android:inputType="numberSigned"
+                    android:text="5"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:id="@+id/textDistanceUnit"
+                    android:layout_column="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sluitingstijd:"
+                    android:id="@+id/textClosingTime"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/txtClosingHour"
+                    android:layout_weight="0.00"
+                    android:paddingLeft="15dp"
+                    android:text="HH" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:id="@+id/textView20" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/txtClosingMinute"
+                    android:layout_marginRight="100dp"
+                    android:gravity="left"
+                    android:text="MM"
+                    android:textSize="17dp"
+                    android:paddingLeft="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max. Entree:"
+                    android:id="@+id/textMaxEntryFee"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/txtMaxEntryFee"
+                    android:textSize="17dp"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€"
+                    android:id="@+id/textCurrency"
+                    android:textSize="20dp"
+                    android:layout_marginTop="3dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beschikbare Dranken:"
+                android:id="@+id/textDrinksAvailable"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Bier"
+                        android:id="@+id/textBeer"
+                        android:layout_column="1"
+                        android:textSize="22dp"
+                        android:layout_marginTop="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Switch"
+                        android:id="@+id/switchBeer" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wijn"
+                        android:id="@+id/textWine"
+                        android:layout_column="1"
+                        android:textSize="22dp"
+                        android:layout_marginTop="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Switch"
+                        android:id="@+id/switchWine" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fris"
+                        android:id="@+id/textSoda"
+                        android:layout_column="1"
+                        android:textSize="22dp"
+                        android:layout_marginTop="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Switch"
+                        android:id="@+id/switchSoda" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Speciaalbier:"
+                        android:id="@+id/textSpecialBeer"
+                        android:layout_column="1"
+                        android:textSize="22dp"
+                        android:layout_marginTop="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Switch"
+                        android:id="@+id/switchSpecialBeer" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mousserende Wijn:"
+                        android:id="@+id/textBubblyWine"
+                        android:layout_column="1"
+                        android:textSize="22dp"
+                        android:layout_marginTop="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Switch"
+                        android:id="@+id/switchBubblyWine" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sterke Drank:"
+                        android:id="@+id/textLiqour"
+                        android:layout_column="1"
+                        android:textSize="22dp"
+                        android:layout_marginTop="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Switch"
+                        android:id="@+id/switchLiquor" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:text="Opslaan"
+            android:id="@+id/btnSavePrefs"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:baselineAligned="false"
+        android:weightSum="1"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSocial"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/socialicon"
+            android:scaleType="fitCenter"
+            android:onClick="goToSocial"
+            android:focusableInTouchMode="false" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSearch"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:focusableInTouchMode="false"
+            android:onClick="onSearchClick" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSettings"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wrench"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>

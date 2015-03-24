@@ -75,7 +75,10 @@
             android:label="@string/title_activity_add_review" >
             android:name=".GroupInfoActivity"
             android:label="@string/title_activity_group_info" >
-
+        </activity>
+        <activity
+            android:name=".Voorkeuren"
+            android:label="@string/title_activity_voorkeuren" >
         </activity>
     </application>
 

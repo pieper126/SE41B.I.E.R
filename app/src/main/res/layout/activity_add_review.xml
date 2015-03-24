@@ -85,49 +85,4 @@
     </RelativeLayout>
 
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:baselineAligned="false"
-        android:weightSum="1"
-        android:layout_margin="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
-        android:gravity="bottom">
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/btnSocial"
-            android:layout_gravity="center_vertical"
-            android:clickable="false"
-            android:src="@drawable/socialicon"
-            android:scaleType="fitCenter"
-            android:layout_weight="0.33" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/btnBack"
-            android:layout_weight="0.33"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/back"
-            android:scaleType="fitCenter"
-            android:focusableInTouchMode="false"
-            android:onClick="onBackClicked" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/btnSettings"
-            android:layout_weight="0.33"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/wrench"
-            android:scaleType="fitCenter" />
-    </LinearLayout>
-
-
 </LinearLayout>

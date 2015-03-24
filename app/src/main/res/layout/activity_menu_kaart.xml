@@ -43,7 +43,8 @@
             android:clickable="false"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:onClick="OnClickSocialMenu" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -54,7 +55,7 @@
             android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
-            android:onClick="onBackClicked" />
+            android:onClick="OnClickBackMenu" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -63,7 +64,8 @@
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:onClick="OnClickBackMenu" />
     </LinearLayout>
 
 

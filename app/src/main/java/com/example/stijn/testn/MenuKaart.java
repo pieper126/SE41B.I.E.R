@@ -1,9 +1,11 @@
 package com.example.stijn.testn;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MenuKaart extends ActionBarActivity {
@@ -35,5 +37,23 @@ public class MenuKaart extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void OnClickSocialMenu(View v)
+    {
+        Intent intent = new Intent(this, Social.class);
+        startActivity(intent);
+    }
+
+    public void OnClickBackMenu(View v)
+    {
+        Intent intent = new Intent(this, KroegInfo.class);
+        startActivity(intent);
+    }
+
+    public void OnClickContactMenu(View v)
+    {
+        Intent intent = new Intent(this, contactscherm.class);
+        startActivity(intent);
     }
 }

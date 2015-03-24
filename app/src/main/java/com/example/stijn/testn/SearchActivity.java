@@ -58,4 +58,9 @@ public class SearchActivity extends ActionBarActivity {
         Intent i = new Intent(this, contactscherm.class);
         startActivity(i);
     }
+
+    public void onGroupsClickedFromSearch(View v) {
+        Intent i = new Intent(this, Groepen.class);
+        startActivity(i);
+    }
 }

@@ -148,7 +148,8 @@ android:weightSum="1">
             android:layout_below="@+id/spinner"
             android:layout_alignEnd="@+id/editText"
             android:layout_marginTop="10dp"
-            android:layout_alignStart="@+id/txfSearch" />
+            android:layout_alignStart="@+id/txfSearch"
+            android:onClick="onGroupsClickedFromSearch" />
 
         <Button
             android:layout_width="wrap_content"

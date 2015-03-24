@@ -26,7 +26,17 @@ public class TERING extends FragmentActivity {
     }
 
     public void goToSocial(View view){
-        Intent intent = new Intent(TERING.this, Social.class);
+        Intent intent = new Intent(this, Social.class);
+        startActivity(intent);
+    }
+
+    public void onContactsClickedFromMain(View view) {
+        Intent intent = new Intent(this, contactscherm.class);
+        startActivity(intent);
+    }
+
+    public void onBarClickedFromMain(View v) {
+        Intent intent = new Intent(this, KroegInfo.class);
         startActivity(intent);
     }
 

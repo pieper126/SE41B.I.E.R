@@ -4,12 +4,43 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:id="@+id/map"
-        android:layout_weight="1.01" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="501dp"
+        android:background="@drawable/map">
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:background="@drawable/beermarker"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="186dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout9"
+            android:nestedScrollingEnabled="false"
+            android:onClick="onBarClickedFromMain"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:background="@drawable/beermarker"
+            android:layout_marginBottom="25dp"
+            android:layout_above="@+id/relativeLayout9"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp"
+            android:id="@+id/relativeLayout10"
+            android:onClick="onBarClickedFromMain" />
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:background="@drawable/beermarker"
+            android:layout_alignTop="@+id/relativeLayout9"
+            android:layout_alignStart="@+id/relativeLayout10"
+            android:layout_marginTop="90dp"
+            android:onClick="onBarClickedFromMain" />
+    </RelativeLayout>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -52,7 +83,8 @@
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:onClick="onContactsClickedFromMain" />
     </LinearLayout>
 
 </LinearLayout>

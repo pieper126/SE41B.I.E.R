@@ -35,8 +35,9 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="392dp"
-            android:id="@+id/">
+            android:layout_height="380dp"
+            android:id="@+id/linId">
+
 
             <ListView
                 android:layout_width="wrap_content"

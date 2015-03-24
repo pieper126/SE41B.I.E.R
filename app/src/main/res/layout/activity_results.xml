@@ -195,7 +195,8 @@
             android:clickable="false"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:onClick="onSearchClickedFromSearch" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -215,7 +216,8 @@
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:onClick="onContactsClicked" />
     </LinearLayout>
 
 

@@ -39,13 +39,23 @@ public class SearchActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onSearchClicked(View v) {
+    public void onSearchClickedFromSearch(View v) {
         Intent i = new Intent(this, ResultsActivity.class);
         startActivity(i);
     }
 
-    public void onBackClicked(View view) {
+    public void onBackClickedFromSearch(View view) {
         Intent i = new Intent(this, TERING.class);
+        startActivity(i);
+    }
+
+    public void onSocialClickedFromSearch(View v) {
+        Intent i = new Intent(this, Social.class);
+        startActivity(i);
+    }
+
+    public void onContactsClickedFromSearch(View v) {
+        Intent i = new Intent(this, contactscherm.class);
         startActivity(i);
     }
 }

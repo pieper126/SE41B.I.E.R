@@ -48,4 +48,14 @@ public class ResultsActivity extends ActionBarActivity {
         Intent i = new Intent(this, KroegInfo.class);
         startActivity(i);
     }
+
+    public void onSocialClicked(View v) {
+        Intent i = new Intent(this, Social.class);
+        startActivity(i);
+    }
+
+    public void onContactsClicked(View v) {
+        Intent i = new Intent(this, contactscherm.class);
+        startActivity(i);
+    }
 }

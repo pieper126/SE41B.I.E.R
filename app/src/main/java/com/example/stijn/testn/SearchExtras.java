@@ -1,9 +1,11 @@
 package com.example.stijn.testn;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class SearchExtras extends ActionBarActivity {
@@ -12,6 +14,11 @@ public class SearchExtras extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_extras);
+    }
+
+    public void onSearchClickFromExtras(View v) {
+        Intent i = new Intent(this, SearchActivity.class);
+        startActivity(i);
     }
 
 

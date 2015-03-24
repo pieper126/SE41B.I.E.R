@@ -17,7 +17,9 @@
         android:text="Opslaan en Terug"
         android:id="@+id/btnSubmitExtras"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="onSearchClickFromExtras" />
 
     <TableLayout
         android:layout_width="fill_parent"

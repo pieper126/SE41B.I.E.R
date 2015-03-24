@@ -73,6 +73,9 @@
         <activity
             android:name=".AddReview"
             android:label="@string/title_activity_add_review" >
+            android:name=".GroupInfoActivity"
+            android:label="@string/title_activity_group_info" >
+
         </activity>
     </application>
 

@@ -15,12 +15,14 @@
             android:layout_height="wrap_content"
             android:text="Vrienden"
             android:id="@+id/btnVriendenGroepen"
+            android:onClick="goToVrienden"
             android:layout_weight="10" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Groepen"
+            android:onClick="goTOGroepen"
             android:id="@+id/btnSocialGroepen"
             android:layout_weight="10" />
 
@@ -28,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Social media"
+            android:onClick="goToSocialMedia"
             android:id="@+id/btnSocialMediaGroepen"
             android:layout_weight="10" />
     </LinearLayout>
@@ -47,10 +50,21 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/btnSocial"
+            android:id="@+id/btnSearch"
+            android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
-            android:clickable="false"
-            android:src="@drawable/socialicon"
+            android:onClick="goToSearch"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:focusableInTouchMode="false" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnReturn"
+            android:layout_gravity="center_vertical"
+            android:onClick="goToHome"
+            android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:layout_weight="0.33"
             android:layout_margin="0dp"
@@ -62,21 +76,13 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/btnSearch"
-            android:layout_weight="0.33"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/search"
-            android:scaleType="fitCenter"
-            android:focusableInTouchMode="false" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:onClick="goToContact"
             android:id="@+id/btnSettings"
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:nestedScrollingEnabled="false" />
 
     </LinearLayout>
 

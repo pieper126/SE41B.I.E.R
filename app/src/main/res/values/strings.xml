@@ -16,5 +16,6 @@
     <string name="title_activity_menu_kaart">MenuKaart</string>
     <string name="title_activity_reviews">Reviews</string>
     <string name="title_activity_add_review">AddReview</string>
+    <string name="title_activity_group_info">GroupInfoActivity</string>
 
 </resources>

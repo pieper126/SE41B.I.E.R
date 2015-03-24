@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imgMap"
-            android:src="@drawable/Map"
+            android:src="@drawable/map"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true" />
 

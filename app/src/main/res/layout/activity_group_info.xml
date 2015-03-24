@@ -35,6 +35,7 @@
                 android:layout_weight="0.33"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/cog"
+                android:onClick="onPreferencesClicked"
                 android:scaleType="fitCenter"
                 android:focusableInTouchMode="false"
                 android:layout_alignParentTop="true"

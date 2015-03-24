@@ -4,9 +4,15 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/imgLogo"
+        android:src="@android:drawable/bottom_bar" />
+
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="501dp"
+        android:layout_height="418dp"
         android:background="@drawable/map">
 
         <RelativeLayout

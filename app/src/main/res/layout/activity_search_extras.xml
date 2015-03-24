@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.stijn.testn.SearchExtras">
+
+    <TextView android:text="Max. Prijzen: " android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:id="@+id/textView19" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:text="Opslaan en Terug"
+        android:id="@+id/btnSubmitExtras"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnSubmitExtras"
+        android:layout_marginTop="15dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entree:"
+                android:id="@+id/textEntryFee"
+                android:layout_column="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:id="@+id/textCurrency1"
+                android:layout_column="1"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEntryFee"
+                android:layout_column="2"
+                android:layout_marginLeft="3dp"
+                android:inputType="numberSigned" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bier:"
+                android:id="@+id/textBeer"
+                android:layout_column="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:id="@+id/textCurrency2"
+                android:layout_column="1"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBeer"
+                android:layout_column="2"
+                android:layout_marginLeft="3dp"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speciaalbier:"
+                android:id="@+id/textSpecialBeer"
+                android:layout_column="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:id="@+id/textCurrency3"
+                android:layout_column="1"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSpecialBeer"
+                android:layout_column="2"
+                android:layout_marginLeft="3dp"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wijn:"
+                android:id="@+id/textWine"
+                android:layout_column="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:id="@+id/textCurrency4"
+                android:layout_column="1"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtWine"
+                android:layout_column="2"
+                android:layout_marginLeft="3dp"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mousserende Wijn"
+                android:id="@+id/textBubblyWine"
+                android:layout_column="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:id="@+id/textCurrency5"
+                android:layout_column="1"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBubblyWine"
+                android:layout_column="2"
+                android:layout_marginLeft="3dp"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fris:"
+                android:id="@+id/textSoda"
+                android:layout_column="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:id="@+id/textCurrency6"
+                android:layout_column="1"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSoda"
+                android:layout_column="2"
+                android:layout_marginLeft="3dp"
+                android:inputType="numberSigned" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sterke Drank:"
+                android:id="@+id/textLiquor"
+                android:layout_column="0"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:id="@+id/textCurrency6"
+                android:layout_column="1"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLiquor"
+                android:layout_column="2"
+                android:layout_marginLeft="3dp"
+                android:inputType="numberSigned" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

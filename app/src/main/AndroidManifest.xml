@@ -80,6 +80,10 @@
             android:name=".Voorkeuren"
             android:label="@string/title_activity_voorkeuren" >
         </activity>
+        <activity
+            android:name=".SearchExtras"
+            android:label="@string/title_activity_search_extras" >
+        </activity>
     </application>
 
 </manifest>

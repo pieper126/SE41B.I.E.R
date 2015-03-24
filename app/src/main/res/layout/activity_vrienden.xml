@@ -44,7 +44,7 @@
 
             <ListView
                 android:layout_width="wrap_content"
-                android:layout_height="446dp"
+                android:layout_height="375dp"
                 android:id="@+id/listView" />
 
         </LinearLayout>
@@ -52,7 +52,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:baselineAligned="false"
             android:weightSum="1"
             android:layout_margin="0dp"
@@ -82,7 +82,6 @@
                 android:layout_height="match_parent"
                 android:id="@+id/btnSearch"
                 android:layout_weight="0.33"
-                android:layout_gravity="center_vertical"
                 android:onClick="goToHomeVrienden"
                 android:src="@drawable/back"
                 android:scaleType="fitCenter"

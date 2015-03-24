@@ -65,11 +65,21 @@
             <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:id="@+id/btnSocial"
+                android:id="@+id/btnBack"
+                android:layout_weight="0.33"
+                android:src="@drawable/back"
+                android:scaleType="fitCenter"
+                android:onClick="goToSocialGroepen"
+                android:focusableInTouchMode="false" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnSearch"
                 android:layout_gravity="center_vertical"
                 android:clickable="false"
-                android:src="@drawable/socialicon"
-                android:onClick="goToSocialGroepen"
+                android:src="@drawable/search"
+                android:onClick="goToSearchGroepen"
                 android:scaleType="fitCenter"
                 android:layout_weight="0.33"
                 android:layout_margin="0dp"
@@ -81,21 +91,11 @@
             <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:id="@+id/btnSearch"
-                android:layout_weight="0.33"
-                android:src="@drawable/search"
-                android:scaleType="fitCenter"
-                android:onClick="goToSearchGroepen"
-                android:focusableInTouchMode="false" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="70dp"
                 android:id="@+id/btnSettings"
                 android:layout_weight="0.33"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/wrench"
-                android:onClick="goToContact"
+                android:onClick="goToContactGroepen"
                 android:scaleType="fitCenter" />
 
         </LinearLayout>

@@ -1,9 +1,11 @@
 package com.example.stijn.testn;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class AddGroup extends ActionBarActivity {
@@ -35,5 +37,29 @@ public class AddGroup extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void OnBackNewGroup(View view)
+    {
+        Intent intent = new Intent(this, Social.class);
+        startActivity(intent);
+    }
+
+    public void OnSearchNewGroup(View view)
+    {
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
+
+    public void OnContactNewGroup(View view)
+    {
+        Intent intent = new Intent(this, contactscherm.class);
+        startActivity(intent);
+    }
+
+    public void OnAcceptNewGroup(View view)
+    {
+        Intent intent = new Intent(this, Groepen.class);
+        startActivity(intent);
     }
 }

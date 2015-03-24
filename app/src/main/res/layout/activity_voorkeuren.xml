@@ -325,10 +325,10 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/btnSearch"
+            android:id="@+id/btnBack"
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/search"
+            android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
             android:onClick="onSearchClick" />

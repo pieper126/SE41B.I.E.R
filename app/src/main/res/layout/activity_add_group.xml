@@ -15,11 +15,12 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Naam:"
             android:id="@+id/textView21"
-            android:layout_marginStart="29dp"
-            android:layout_marginTop="28dp"
+            android:singleLine="false"
+            android:textSize="30dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:singleLine="false" />
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="8dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -34,10 +35,11 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/imageButton6"
-            android:src="@drawable/plus"
+            android:src="@drawable/checkmark"
             android:scaleType="fitCenter"
             android:layout_alignBottom="@+id/textView21"
-            android:layout_toEndOf="@+id/editText2" />
+            android:layout_toEndOf="@+id/editText2"
+            android:onClick="OnAcceptNewGroup" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -78,7 +80,7 @@
             android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:layout_weight="0.33"
-            android:onClick="onBackClicked" />
+            android:onClick="OnBackNewGroup" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -89,7 +91,7 @@
             android:src="@drawable/search"
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
-            android:onClick="onSearchClicked" />
+            android:onClick="OnSearchNewGroup" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -99,7 +101,7 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
             android:scaleType="fitCenter"
-            android:onClick="onContactsClicked" />
+            android:onClick="OnContactNewGroup" />
     </LinearLayout>
 
 </LinearLayout>

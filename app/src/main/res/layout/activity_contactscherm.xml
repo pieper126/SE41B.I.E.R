@@ -10,7 +10,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="1.00"
         android:text="Bij problemen of andere vragen, mail ons via iets@gmail.com"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -33,7 +34,18 @@
             android:clickable="false"
             android:src="@drawable/socialicon"
             android:scaleType="fitCenter"
-            android:layout_weight="0.33" />
+            android:layout_weight="0.33"
+            android:onClick="goToContact" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSearch"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:onClick="goToSearch" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -44,16 +56,7 @@
             android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
-            android:onClick="onBackClicked" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/btnSettings"
-            android:layout_weight="0.33"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/wrench"
-            android:scaleType="fitCenter" />
+            android:onClick="goBack" />
     </LinearLayout>
 
 

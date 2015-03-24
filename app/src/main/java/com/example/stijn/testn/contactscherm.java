@@ -41,11 +41,17 @@ public class contactscherm extends ActionBarActivity {
 
     public void goToContact(View view)
     {
-        Intent intent = new Intent(contactscherm.this, TERING.class);
+        Intent intent = new Intent(contactscherm.this, Social.class);
         startActivity(intent);
     }
 
-    public void goToFriends(View view)
+    public void goToSearch(View view)
+    {
+        Intent intent = new Intent(contactscherm.this, SearchActivity.class);
+        startActivity(intent);
+    }
+
+    public void goBack(View view)
     {
         Intent intent = new Intent(contactscherm.this, TERING.class);
         startActivity(intent);

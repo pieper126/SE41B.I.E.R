@@ -45,8 +45,9 @@ public class Vrienden extends ActionBarActivity {
     }
 
     public void goToHomeVrienden(View view){
-        Intent intent = new Intent(this, Social.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, Social.class);
+        //startActivity(intent);
+        this.finish();
     }
 
     public void goToContactVrienden(View view){

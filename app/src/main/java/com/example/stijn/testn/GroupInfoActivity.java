@@ -39,8 +39,9 @@ public class GroupInfoActivity extends ActionBarActivity {
     }
 
     public void onBackClicked(View v) {
-        Intent i = new Intent(this, Groepen.class);
-        startActivity(i);
+        //Intent i = new Intent(this, Groepen.class);
+        //startActivity(i);
+        this.finish();
     }
 
     public void onSearchClicked(View v) {

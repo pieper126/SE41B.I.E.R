@@ -46,8 +46,9 @@ public class Social extends ActionBarActivity {
     }
 
     public void goToHome(View view){
-        Intent intent = new Intent(this, TERING.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, TERING.class);
+        //startActivity(intent);
+        this.finish();
     }
 
     public void goToContact(View view){

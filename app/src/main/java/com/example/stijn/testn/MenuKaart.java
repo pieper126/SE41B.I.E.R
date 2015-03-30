@@ -47,8 +47,9 @@ public class MenuKaart extends ActionBarActivity {
 
     public void OnClickBackMenu(View v)
     {
-        Intent intent = new Intent(this, KroegInfo.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, KroegInfo.class);
+        //startActivity(intent);
+        this.finish();
     }
 
     public void OnClickContactMenu(View v)

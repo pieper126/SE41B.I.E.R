@@ -45,8 +45,9 @@ public class SearchActivity extends ActionBarActivity {
     }
 
     public void onBackClickedFromSearch(View view) {
-        Intent i = new Intent(this, TERING.class);
-        startActivity(i);
+        //Intent i = new Intent(this, TERING.class);
+        //startActivity(i);
+        this.finish();
     }
 
     public void onSocialClickedFromSearch(View v) {

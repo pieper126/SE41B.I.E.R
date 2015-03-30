@@ -53,7 +53,13 @@ public class Voorkeuren extends ActionBarActivity {
 
     public void OnBackClickPrefs(View view)
     {
-        Intent intent = new Intent(this, GroupInfoActivity.class);
+        this.finish();
+        //Intent intent = new Intent(this, GroupInfoActivity.class);
+        //startActivity(intent);
+    }
+
+    public void OnSearchClickPrefs(View view) {
+        Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
     }
 }

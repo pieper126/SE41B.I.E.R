@@ -228,8 +228,7 @@
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
             android:src="@drawable/wrench"
-            android:scaleType="fitCenter"
-            android:onClick="onContactsClicked" />
+            android:scaleType="fitCenter" />
     </LinearLayout>
 
 </LinearLayout>

@@ -17,8 +17,9 @@ public class SearchExtras extends ActionBarActivity {
     }
 
     public void onSearchClickFromExtras(View v) {
-        Intent i = new Intent(this, SearchActivity.class);
-        startActivity(i);
+        //Intent i = new Intent(this, SearchActivity.class);
+        //startActivity(i);
+        this.finish();
     }
 
 

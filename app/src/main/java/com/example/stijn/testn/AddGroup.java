@@ -41,8 +41,9 @@ public class AddGroup extends ActionBarActivity {
 
     public void OnBackNewGroup(View view)
     {
-        Intent intent = new Intent(this, Social.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, Social.class);
+        //startActivity(intent);
+        this.finish();
     }
 
     public void OnSearchNewGroup(View view)
@@ -59,7 +60,8 @@ public class AddGroup extends ActionBarActivity {
 
     public void OnAcceptNewGroup(View view)
     {
-        Intent intent = new Intent(this, Groepen.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, Groepen.class);
+        //startActivity(intent);
+        this.finish();
     }
 }

@@ -47,8 +47,9 @@ public class Groepen extends ActionBarActivity {
 
     public void goToSocialGroepen(View view)
     {
-        Intent intent = new Intent(this, Social.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, Social.class);
+        //startActivity(intent);
+        finish();
     }
 
     public void goToContactGroepen(View view)

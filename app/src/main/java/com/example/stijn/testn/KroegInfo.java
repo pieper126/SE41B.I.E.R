@@ -69,7 +69,8 @@ public class KroegInfo extends ActionBarActivity {
     }
 
     public void OnClickBackKroegInfo(View view){
-        Intent intent = new Intent(this, ResultsActivity.class);
-        startActivity(intent);
+        this.finish();
+        //Intent intent = new Intent(this, ResultsActivity.class);
+        //startActivity(intent);
     }
 }

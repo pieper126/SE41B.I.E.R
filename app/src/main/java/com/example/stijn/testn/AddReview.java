@@ -41,7 +41,8 @@ public class AddReview extends ActionBarActivity {
 
     public void OnSendReview(View v)
     {
-        Intent intent = new Intent(AddReview.this, TERING.class);
-        startActivity(intent);
+        //Intent intent = new Intent(AddReview.this, TERING.class);
+        //startActivity(intent);
+        finish();
     }
 }

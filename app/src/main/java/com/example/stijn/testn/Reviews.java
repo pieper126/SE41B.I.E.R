@@ -47,8 +47,9 @@ public class Reviews extends ActionBarActivity {
 
     public void OnClickBackReviews(View v)
     {
-        Intent intent = new Intent(Reviews.this, KroegInfo.class);
-        startActivity(intent);
+        //Intent intent = new Intent(Reviews.this, KroegInfo.class);
+        //startActivity(intent);
+        this.finish();
     }
 
     public void OnClickContactReviews(View v)

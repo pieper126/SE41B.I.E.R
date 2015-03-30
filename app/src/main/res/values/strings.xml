@@ -20,5 +20,7 @@
     <string name="title_activity_voorkeuren">Voorkeuren</string>
     <string name="title_activity_add_group">add_group</string>
     <string name="title_activity_search_extras">SearchExtras</string>
+    <string name="title_activity_group1">group1</string>
+    <string name="title_activity_activity_group_info1">activity_group_info1</string>
 
 </resources>

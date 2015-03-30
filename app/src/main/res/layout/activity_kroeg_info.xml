@@ -7,7 +7,7 @@
         android:layout_width="fill_parent"
         android:layout_height="375dp"
         android:id="@+id/or"
-        android:layout_weight="0.43"><![CDATA[>
+        android:layout_weight="0.33"><![CDATA[>
         ]]>
 
         <ImageView
@@ -405,54 +405,50 @@
     </RelativeLayout>
 
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="75dp"
-            android:background="#ffd5d6d6"
-            android:layout_below="@+id/relativeLayout"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.33">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push naar groep"
+            android:id="@+id/btnPush"
+            android:layout_alignTop="@+id/btnMenu"
+            android:layout_toEndOf="@+id/btnMenu"
+            android:layout_marginLeft="9dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="OnPushGroupKroegInfo" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menukaart"
+            android:id="@+id/btnMenu"
+            android:layout_marginLeft="7dp"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="10dp"
-            android:id="@+id/buttons"
-            android:layout_weight="0.52">
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="OnClickMenuKroegInfo" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Push naar groep"
-                android:id="@+id/btnPush"
-                android:layout_alignTop="@+id/btnMenu"
-                android:layout_toEndOf="@+id/btnMenu"
-                android:layout_marginLeft="9dp"
-                android:layout_alignParentBottom="true"
-                android:onClick="OnPushGroupKroegInfo" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Menukaart"
-                android:id="@+id/btnMenu"
-                android:layout_marginLeft="7dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:onClick="OnClickMenuKroegInfo" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reviews"
-                android:id="@+id/btnReviews"
-                android:layout_alignTop="@+id/btnMenu"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="14dp"
-                android:layout_alignParentBottom="true"
-                android:onClick="OnClickReviewsKroegInfo" />
-        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:id="@+id/btnReviews"
+            android:layout_alignTop="@+id/btnMenu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="14dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="OnClickReviewsKroegInfo" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="70dp"
+        android:layout_height="30dp"
         android:baselineAligned="false"
         android:weightSum="1"
         android:layout_margin="0dp"
@@ -460,7 +456,8 @@
         android:layout_marginTop="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
-        android:gravity="bottom">
+        android:gravity="bottom"
+        android:layout_weight="0.33">
 
         <ImageButton
             android:layout_width="0dp"

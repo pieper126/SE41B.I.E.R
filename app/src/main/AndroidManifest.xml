@@ -73,6 +73,8 @@
         <activity
             android:name=".AddReview"
             android:label="@string/title_activity_add_review" >
+        </activity>
+        <activity
             android:name=".GroupInfoActivity"
             android:label="@string/title_activity_group_info" >
         </activity>
@@ -87,6 +89,10 @@
         <activity
             android:name=".SearchExtras"
             android:label="@string/title_activity_search_extras" >
+        </activity>
+        <activity
+            android:name=".AddFriend"
+            android:label="@string/title_activity_add_friend" >
         </activity>
     </application>
 

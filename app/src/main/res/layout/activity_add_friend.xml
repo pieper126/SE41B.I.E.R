@@ -1,60 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:id="@+id/vrienden"
+        android:weightSum="1">
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="57dp"
-            android:id="@+id/GroepenLL3"
+            android:orientation="horizontal"
+            android:id="@+id/LLVrienden1"
             android:weightSum="1">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Groepen"
+                android:text="Vrienden"
                 android:id="@+id/textView"
                 android:textStyle="bold"
-                android:textSize="30sp"
-                android:layout_weight="0.50" />
+                android:textSize="30dp" />
 
-            <ImageButton
-                android:layout_width="0dp"
+            <EditText
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton"
-                android:contentDescription=""
-                android:adjustViewBounds="true"
-                android:src="@drawable/plus"
-                android:scaleType="fitCenter"
-                android:onClick="goToAddGroup"
-                android:layout_weight="0.50" />
+                android:id="@+id/editText"
+                android:layout_weight="0.91"
+                android:text="search" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="380dp"
-            android:id="@+id/random"
-            android:layout_weight="1.08">
+            android:layout_height="490dp"
+            android:weightSum="1">
 
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/listView"
+                android:layout_weight="3.90"
+                android:longClickable="false" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Groep1"
-                android:id="@+id/button6"
-                android:clickable="true"
-                android:onClick="goToGroup1" />
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="380dp"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
             android:baselineAligned="false"
             android:weightSum="1"
             android:layout_margin="0dp"
@@ -66,21 +67,11 @@
             <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:id="@+id/btnBack"
-                android:layout_weight="0.33"
-                android:src="@drawable/back"
-                android:scaleType="fitCenter"
-                android:onClick="goToSocialGroepen"
-                android:focusableInTouchMode="false" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:id="@+id/btnSearch"
+                android:id="@+id/btnSocial"
                 android:layout_gravity="center_vertical"
-                android:clickable="false"
+                android:clickable="true"
+                android:onClick="onSearchClickedFriend"
                 android:src="@drawable/search"
-                android:onClick="goToSearchGroepen"
                 android:scaleType="fitCenter"
                 android:layout_weight="0.33"
                 android:layout_margin="0dp"
@@ -92,14 +83,26 @@
             <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="70dp"
+                android:id="@+id/btnSearch"
+                android:layout_weight="0.33"
+                android:onClick="onBackClickedFriend"
+                android:src="@drawable/back"
+                android:scaleType="fitCenter"
+                android:focusableInTouchMode="false" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
                 android:id="@+id/btnSettings"
                 android:layout_weight="0.33"
+                android:onClick="goToContactVrienden"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/wrench"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"
+                android:nestedScrollingEnabled="false" />
 
         </LinearLayout>
 
-
+    </LinearLayout>
 
 </LinearLayout>

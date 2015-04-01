@@ -54,7 +54,7 @@ public class group_info1 extends ActionBarActivity {
     }
 
     public void onContactsClicked(View v) {
-        Intent i = new Intent(this, contactscherm.class);
-        startActivity(i);
+        //Intent i = new Intent(this, contactscherm.class);
+        //startActivity(i);
     }
 }

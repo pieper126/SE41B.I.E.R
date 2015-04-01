@@ -40,8 +40,9 @@ public class ResultsActivity extends ActionBarActivity {
     }
 
     public void onBackClicked(View view) {
-        Intent i = new Intent(this, SearchActivity.class);
-        startActivity(i);
+        //Intent i = new Intent(this, SearchActivity.class);
+        //startActivity(i);
+        this.finish();
     }
 
     public void onBarClicked(View v) {

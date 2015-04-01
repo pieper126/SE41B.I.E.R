@@ -22,5 +22,6 @@
     <string name="title_activity_search_extras">SearchExtras</string>
     <string name="title_activity_group1">group1</string>
     <string name="title_activity_activity_group_info1">activity_group_info1</string>
+    <string name="title_activity_add_friend">AddFriend</string>
 
 </resources>

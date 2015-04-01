@@ -35,7 +35,7 @@
                 android:layout_weight="0.33"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/cog"
-                android:onClick="onPreferencesClicked"
+                android:onClick="onPreferencesClicked1"
                 android:scaleType="fitCenter"
                 android:focusableInTouchMode="false"
                 android:layout_alignParentTop="true"
@@ -171,7 +171,8 @@
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:onClick="onFriendsClicked1" />
         </RelativeLayout>
 
         <TextView
@@ -208,7 +209,7 @@
             android:src="@drawable/back"
             android:scaleType="fitCenter"
             android:layout_weight="0.33"
-            android:onClick="onBackClicked" />
+            android:onClick="onBackClicked1" />
 
         <ImageButton
             android:layout_width="0dp"
@@ -219,7 +220,7 @@
             android:src="@drawable/search"
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
-            android:onClick="onSearchClicked" />
+            android:onClick="onSearchClicked1" />
 
         <ImageButton
             android:layout_width="0dp"

@@ -8,18 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class GroupInfoActivity extends ActionBarActivity {
+public class AddFriend extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_group_info);
+        setContentView(R.layout.activity_add_friend);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_group_info, menu);
+        getMenuInflater().inflate(R.menu.menu_add_friend, menu);
         return true;
     }
 
@@ -38,29 +39,14 @@ public class GroupInfoActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onBackClicked1(View v) {
-        //Intent i = new Intent(this, Groepen.class);
-        //startActivity(i);
-        this.finish();
-    }
-
-    public void onSearchClicked1(View v) {
+    public void onSearchClickedFriend(View v) {
         Intent i = new Intent(this, SearchActivity.class);
         startActivity(i);
     }
 
-    public void onPreferencesClicked1(View v) {
-        Intent i = new Intent(this, Voorkeuren.class);
-        startActivity(i);
-    }
-
-    public void onFriendsClicked1(View v) {
-        Intent i = new Intent(this, Vrienden.class);
-        startActivity(i);
-    }
-
-    public void onContactsClicked1(View v) {
-        //Intent i = new Intent(this, contactscherm.class);
+    public void onBackClickedFriend(View v) {
+       // Intent i = new Intent(this, SearchActivity.class);
         //startActivity(i);
+        this.finish();
     }
 }

@@ -60,8 +60,8 @@ public class Groepen extends ActionBarActivity {
 
     public void goToGroup1(View view)
     {
-        Intent intent = new Intent(this, group_info1.class);
-        startActivity(intent);
+        Intent i = new Intent(this, GroupInfoActivity.class);
+        startActivity(i);
     }
 
     public void goToAddGroup(View view)

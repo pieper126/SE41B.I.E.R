@@ -23,5 +23,6 @@
     <string name="title_activity_group1">group1</string>
     <string name="title_activity_activity_group_info1">activity_group_info1</string>
     <string name="title_activity_add_friend">AddFriend</string>
+    <string name="title_activity_groep_selecteer">GroepSelecteer</string>
 
 </resources>

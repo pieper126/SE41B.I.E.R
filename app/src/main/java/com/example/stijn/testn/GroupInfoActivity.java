@@ -59,6 +59,11 @@ public class GroupInfoActivity extends ActionBarActivity {
         startActivity(i);
     }
 
+    public void onSearchResults234Clicked1(View v) {
+        Intent i = new Intent(this, ResultsActivity.class);
+        startActivity(i);
+    }
+
     public void onContactsClicked1(View v) {
         //Intent i = new Intent(this, contactscherm.class);
         //startActivity(i);

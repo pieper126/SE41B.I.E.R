@@ -94,6 +94,10 @@
             android:name=".AddFriend"
             android:label="@string/title_activity_add_friend" >
         </activity>
+        <activity
+            android:name=".GroepSelecteer"
+            android:label="@string/title_activity_groep_selecteer" >
+        </activity>
     </application>
 
 </manifest>

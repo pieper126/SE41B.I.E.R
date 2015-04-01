@@ -61,7 +61,7 @@ public class SearchActivity extends ActionBarActivity {
     }
 
     public void onGroupsClickedFromSearch(View v) {
-        Intent i = new Intent(this, Groepen.class);
+        Intent i = new Intent(this, GroepSelecteer.class);
         startActivity(i);
     }
 

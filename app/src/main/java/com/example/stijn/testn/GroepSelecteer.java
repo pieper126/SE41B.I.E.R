@@ -1,7 +1,6 @@
 package com.example.stijn.testn;
 
 import android.content.Intent;
-import android.database.CursorJoiner;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,19 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class KroegInfo extends ActionBarActivity {
+public class GroepSelecteer extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kroeg_info);
+        setContentView(R.layout.activity_groep_selecteer);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kroeg_info, menu);
+        getMenuInflater().inflate(R.menu.menu_groep_selecteer, menu);
         return true;
     }
 
@@ -40,37 +39,34 @@ public class KroegInfo extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void OnPushGroupKroegInfo(View v)
+    public void goToSearchGroepe2n(View view)
     {
-        Intent intent = new Intent(KroegInfo.this, GroepSelecteer.class);
+        Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
     }
 
-    public void OnClickMenuKroegInfo(View v)
+    public void goToSocialGroepe2n(View view)
     {
-        Intent intent = new Intent(this, MenuKaart.class);
-        startActivity(intent);
-    }
-
-    public void OnClickReviewsKroegInfo(View v)
-    {
-        Intent intent = new Intent(this, Reviews.class);
-        startActivity(intent);
-    }
-
-    public void OnClickSocialKroegInfo(View view){
-        Intent intent = new Intent(this, Social.class);
-        startActivity(intent);
-    }
-
-    public void OnClickContactKroegInfo(View view){
-        Intent intent = new Intent(this, contactscherm.class);
-        startActivity(intent);
-    }
-
-    public void OnClickBackKroegInfo(View view){
-        this.finish();
-        //Intent intent = new Intent(this, ResultsActivity.class);
+        //Intent intent = new Intent(this, Social.class);
         //startActivity(intent);
+        finish();
+    }
+
+    public void goToSearchResultsGroepe2n(View view)
+    {
+        Intent intent = new Intent(this, ResultsActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToGroup21(View view)
+    {
+        Intent i = new Intent(this, GroupInfoActivity.class);
+        startActivity(i);
+    }
+
+    public void goToAddGrou22p(View view)
+    {
+        Intent intent = new Intent(this, AddGroup.class);
+        startActivity(intent);
     }
 }

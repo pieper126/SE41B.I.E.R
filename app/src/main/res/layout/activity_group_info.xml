@@ -10,7 +10,7 @@
         android:id="@+id/RelativeLayout">
 
         <RelativeLayout
-            android:layout_width="fill_parent"
+            android:layout_width="275dp"
             android:layout_height="55dp"
             android:background="#ffe4e5e5"
             android:id="@+id/relativeLayout4"
@@ -24,9 +24,9 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Groepsnaam"
                 android:id="@+id/textView14"
+                android:textSize="33dp"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:textSize="33dp" />
+                android:layout_alignParentEnd="true" />
 
             <ImageButton
                 android:layout_width="80dp"
@@ -186,6 +186,20 @@
             android:layout_marginTop="12dp"
             android:textSize="25dp" />
 
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton14"
+            android:layout_weight="0.33"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:focusableInTouchMode="false"
+            android:onClick="onSearchResults234Clicked1"
+            android:layout_above="@+id/relativeLayout5"
+            android:layout_alignEnd="@+id/relativeLayout5"
+            android:visibility="visible" />
+
     </RelativeLayout>
 
     <LinearLayout
@@ -203,17 +217,6 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/btnBack"
-            android:layout_gravity="center_vertical"
-            android:clickable="false"
-            android:src="@drawable/back"
-            android:scaleType="fitCenter"
-            android:layout_weight="0.33"
-            android:onClick="onBackClicked1" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:id="@+id/btnSearch"
             android:layout_weight="0.33"
             android:layout_gravity="center_vertical"
@@ -221,6 +224,16 @@
             android:scaleType="fitCenter"
             android:focusableInTouchMode="false"
             android:onClick="onSearchClicked1" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnBack"
+            android:clickable="false"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.33"
+            android:onClick="onBackClicked1" />
 
         <ImageButton
             android:layout_width="0dp"

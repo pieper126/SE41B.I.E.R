@@ -414,7 +414,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Push naar groep"
+            android:text="Deel met groep"
             android:id="@+id/btnPush"
             android:layout_alignTop="@+id/btnMenu"
             android:layout_toEndOf="@+id/btnMenu"
